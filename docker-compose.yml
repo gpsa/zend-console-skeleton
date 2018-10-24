@@ -1,0 +1,16 @@
+version: "3"
+services:
+  cli:
+    build:
+        context: .
+        args:
+          P_CONTAINER_VERSION: "7.2-zts"
+          P_RUN_UID: "1000"
+          P_RUN_GID: "1000"
+          P_RUN_USER: "web"
+          P_RUN_GROUP: "web"
+          P_COMPOSER_HOME: "/home/web/.composer"
+          P_WORKDIR: "/home/web/www"
+    volumes:
+        - .:/home/web/www
+        - $HOME/.composer:/home/web/.composer

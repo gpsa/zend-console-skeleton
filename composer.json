@@ -1,0 +1,34 @@
+{
+    "name": "gpsa/zend-console-skeleton",
+    "description": "Zend Framework Skeleton for creating command line applications",
+    "version": "0.0.1",
+    "require": {
+        "php": ">=7.2",
+        "zfcampus/zf-console": "^1.0",
+        "zendframework/zend-filter": "^2.0",
+        "zendframework/zend-config": "^3.2",
+        "zendframework/zend-servicemanager": "^3.3",
+        "zendframework/zend-config-aggregator": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "Guilherme Alves",
+            "email": "guilhermepsa@gmail.com",
+            "homepage": "http://glhost.net"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org/"
+        }
+    ],
+    "bin": [
+        "bin/cli.php"
+    ],
+    "autoload": {
+        "psr-4": {
+            "ZendConsoleSkeleton\\": "src/"
+        }
+    }
+}

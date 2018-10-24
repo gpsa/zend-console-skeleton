@@ -1,0 +1,6 @@
+version: "3"
+services:
+  cli:
+    volumes:
+        - $HOME/.ssh/id_rsa:/home/web/.ssh/id_rsa:ro
+        - $HOME/.ssh/known_hosts:/home/web/.ssh/known_hosts

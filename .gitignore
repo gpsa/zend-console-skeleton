@@ -1,0 +1,9 @@
+nbproject/private
+.idea
+*.phar
+vendor/
+composer.lock
+data/cache
+!data/cache/.gitkeep
+config/autoload/*local*.php
+docker-compose.override.yml
